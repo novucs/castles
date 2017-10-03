@@ -1,0 +1,58 @@
+name: ${project.name}
+main: ${project.groupId}.${project.artifactId}.${project.name}Plugin
+version: ${project.version}
+description: ${project.description}
+depend: [LegacyFactions, WorldEdit]
+commands:
+  castle:
+    description: Castle default command
+permissions:
+  castle.user:
+    default: true
+    children:
+      castle.help: true
+      castle.list: true
+      castle.info: true
+      castle.warps.use: true
+  castle.admin:
+    default: op
+    children:
+      castle.user: true
+      castle.create: true
+      castle.resize: true
+      castle.rename: true
+      castle.delete: true
+      castle.duration: true
+      castle.enable: true
+      castle.disable: true
+      castle.reward: true
+      castle.reload: true
+      castle.walls.add: true
+      castle.walls.remove: true
+      castle.walls.clear: true
+      castle.warps.set: true
+      castle.warps.use.others: true
+      castle.warps.nowarmup: true
+  castle.*:
+    default: false
+    children:
+      castle.admin: true
+  castle.help: {default: false}
+  castle.create: {default: false}
+  castle.resize: {default: false}
+  castle.rename: {default: false}
+  castle.delete: {default: false}
+  castle.list: {default: false}
+  castle.info: {default: false}
+  castle.duration: {default: false}
+  castle.enable: {default: false}
+  castle.disable: {default: false}
+  castle.reward: {default: false}
+  castle.reload: {default: false}
+  castle.walls.add: {default: false}
+  castle.walls.remove: {default: false}
+  castle.walls.clear: {default: false}
+  castle.warps.set: {default: false}
+  castle.warps.use: {default: false}
+  castle.warps.use.others: {default: false}
+  castle.warps.nowarmup: {default: false}

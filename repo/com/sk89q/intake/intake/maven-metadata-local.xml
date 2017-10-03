@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.sk89q.intake</groupId>
+  <artifactId>intake</artifactId>
+  <versioning>
+    <release>3.1.2-CASTLES</release>
+    <versions>
+      <version>3.1.2-CASTLES</version>
+    </versions>
+    <lastUpdated>20170902053135</lastUpdated>
+  </versioning>
+</metadata>
